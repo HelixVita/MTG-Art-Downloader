@@ -75,6 +75,7 @@ scryFilesRegexed = [regex_filter(_) for _ in scryFilesNormNoApo]
 upFilesRegexed = [regex_filter(_) for _ in upFilesNormNoApo]
 upFilesRegexedNoArtist = [regex_filter(_, includeArtist=False) for _ in upFilesNormNoApo]
 
+print(f"Searching for corresponding art in {upArtDir} ...")
 missingFiles = []
 foundFiles = []
 count = 0
@@ -82,11 +83,11 @@ for i, scryFile in enumerate(scryFilesRegexed):
     up_idxs = np.where(np.array([upFilesRegexed]) == scryFile)
     matchingFiles = np.array([upFiles])[up_idxs].tolist()
     foundFiles.extend(matchingFiles)
-    if not foundFiles:
+    if not matchingFiles:
         up_idxs = np.where(np.array([upFilesRegexedNoArtist]) == scryFile)
         matchingFiles = np.array([upFiles])[up_idxs]
         foundFiles.extend(matchingFiles)
-    if foundFiles:
+    if matchingFiles:
         count += 1
     else:
         missingFiles.append(Path(scryFiles[i]).name)
@@ -106,12 +107,12 @@ for _ in foundFiles:
         destinationDir.mkdir(parents=True, exist_ok=True)
     destination = destinationDir / Path(_).name
     print(_)
-    shutil.copy(_, destination)
+    # shutil.copy(_, destination)
 
 missingFilesTxt = destinationDir / "missingFiles.txt"
 with open(missingFilesTxt, 'w') as f:
     for _ in missingFiles:
-        f.write(f"{_}\n")
+        f.write(f"{normalize_filename(_)}\n")
 
 print('Done')
 
