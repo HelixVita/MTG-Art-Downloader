@@ -15,6 +15,9 @@ upArtDir = Path("D:\\mpcproxies\\Upcaled Arts")
 # 5. Add some cards to the cards.txt as per the README.md
 # 6. Run the MTG-Art-Downloader "main.py" program
 # 7. Run this "upscaled-art-finder.py" program
+# 8. Done!
+# If any upscaled versions were found in upArtDir, then they have now been copied into MTG-Art-Downloader/downloads/scryfall/UpscaledArt
+# The file missingFiles.txt will contain a list of art for which no corresponding art was found in upArtDir.
 # ==== END OF INSTRUCTIONS ====
 
 scryFiles = []
