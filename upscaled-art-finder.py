@@ -6,6 +6,17 @@ from unidecode import unidecode
 import numpy as np
 import shutil
 
+# ==== INSTRUCTIONS ====
+# 1. Get your hands on a bunch of upscaled art, for example from the mpcproxies google drive.
+# 2. If the content is online, download a local copy of it and place in a folder on your computer, henceforth referred to as the "upArtDir"
+# 3. Replace the path below with the path to the upArtDir
+upArtDir = Path("D:\\mpcproxies\\Upcaled Arts")
+# 4. Open config.ini and set Only.Download.Scryfall = true
+# 5. Add some cards to the cards.txt as per the README.md
+# 6. Run the MTG-Art-Downloader "main.py" program
+# 7. Run this "upscaled-art-finder.py" program
+# ==== END OF INSTRUCTIONS ====
+
 scryFiles = []
 scryDownDir = Path("downloaded\\scryfall")
 
@@ -14,7 +25,6 @@ for ext in extensions:
     scryFiles.extend(glob(os.path.join(scryDownDir, ext)))
 
 upFiles = []
-upArtDir = Path("D:\\mpcproxies\\Upcaled Arts")
 for ext in extensions:
     upFiles.extend(glob(os.path.join(upArtDir,"**", ext)))
 
@@ -101,3 +111,5 @@ with open(missingFilesTxt, 'w') as f:
         f.write(f"{_}\n")
 
 print('Done')
+
+# TODO: Implement finding of art for double-sided cards
