@@ -107,7 +107,7 @@ for _ in foundFiles:
         destinationDir.mkdir(parents=True, exist_ok=True)
     destination = destinationDir / Path(_).name
     print(_)
-    # shutil.copy(_, destination)
+    shutil.copy(_, destination)
 
 missingFilesTxt = destinationDir / "missingFiles.txt"
 with open(missingFilesTxt, 'w') as f:
