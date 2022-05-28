@@ -84,18 +84,18 @@ def regex_filter(scryFile: str, includeArtist = True, includeSetcode = False):
         return None
 
 # ==================================================
-# Step 0: Perform preliminary checks and assertions
+# Perform preliminary checks and assertions
 # ==================================================
 assert upArtDir.exists, f"Could not find {upArtDir}. Please ensure the path provided is correct."
 
 # ==============================================================================
-# Step 1: Normalize filenames
+# -- Normalize filenames --
 # Normalize or standardize the filenames of the upFiles AND scryFiles in order
 # to avoid that minor differences in formatting prevent files from being found.
 # ==============================================================================
 
 # Location of your files downloaded with MTG-Art-Downloader (henceforth referred to as the files in scryDownDir).
-scryDownDir = Path("downloaded2\\scryfall")
+scryDownDir = Path("downloaded\\scryfall")
 # File extensions to include
 extensions = ["*.png", "*.jpg", "*.tif", "*.jpeg"]
 
@@ -117,12 +117,14 @@ scryFilesNormalized = [normalize_filename(_) for _ in scryFiles]
 scryFilesNormNoApo = [replace_apostrophes(_) for _ in scryFilesNormalized]
 scryFilesRegexed = [regex_filter(_) for _ in scryFilesNormNoApo]
 scryFilesRegexedNoArtist = [regex_filter(_, includeArtist=False) for _ in scryFilesNormNoApo]
+scryCount = len(scryFilesRegexed)
 
 # Create normalized, de-apostrophized, and regex-normalized versions of the list of upscaled files
 upFilesNormalized = [normalize_filename(_) for _ in upFiles]
 upFilesNormNoApo = [replace_apostrophes(_) for _ in upFilesNormalized]
 upFilesRegexed = [regex_filter(_) for _ in upFilesNormNoApo]
 upFilesRegexedNoArtist = [regex_filter(_, includeArtist=False) for _ in upFilesNormNoApo]
+upCount = len(upFilesRegexed)
 
 # # Check whether there exist files for which someone has forgotten to replace apostrophes in the google drive:
 # for i, file in enumerate(upFilesNormalized):
@@ -132,7 +134,7 @@ upFilesRegexedNoArtist = [regex_filter(_, includeArtist=False) for _ in upFilesN
 #         break
 
 # ================================================================================
-# Step 2: Compare filenames in upFiles to scryFiles
+# -- Compare filenames in upFiles to scryFiles --
 # To figure out which scryFiles have a corresponding upscaled version in upFiles.
 # ================================================================================
 
@@ -164,73 +166,79 @@ for i, scryFile in enumerate(scryFilesRegexed):
             missingFiles.append(Path(scryFiles[i]).name)
             missingCount += 1
 
-# ======================
-# Step 3: Print results
-# ======================
+# ========================================
+# Create dirs if they don't exist
+# ========================================
 
-scryCount = len(scryFilesRegexed)
+# Dir into which the upscaled art will be copied (and into which the #MissingFiles.txt will be created)
+upDestinationDir = scryDownDir / "UpscaledArt"
+if not upDestinationDir.is_dir():
+    upDestinationDir.mkdir(parents=True, exist_ok=True)
 
-# Print list of missing files
-print(f"\n==== No matching cardname found for {missingCount}/{scryCount} scryfall files: ===={Fore.RED}{Style.BRIGHT}")
+# Dir into which ambiguous artist art will be copied
+ambigDestinationDir = scryDownDir / "UpscaledArt" / "AmbiguousArtist"
+if not ambigDestinationDir.is_dir():
+    ambigDestinationDir.mkdir(parents=True, exist_ok=True)
+
+# =============================
+# Missing files
+# =============================
+print(f"\n==== MISSING UPSCALE ({missingCount}/{scryCount}) - Art for which no matching cardname was found: ===={Fore.RED}{Style.BRIGHT}")
 if missingFiles:
+    # Print list of missing files
     for _ in missingFiles:
         print(_)
 else:
     print("None.")
-print(f"{Style.RESET_ALL}")
+print(f"{Style.RESET_ALL}", end='')
 
-# Print list of files with ambiguous artist (i.e. upFiles with same cardname but with no artist name)
-print(f"==== Files with matching cardname but missing artist name found for {ambiguousArtistCount}/{scryCount} scryfall files: ===={Fore.YELLOW}{Style.BRIGHT}")
-if ambiguousArtistFiles:
-    for _ in ambiguousArtistFiles:
-        print(_)
-else:
-    print("None.")
-print(f"{Style.RESET_ALL}")
-
-# Print list of files found
-print(f"==== Matching cardname AND artist found for {foundCount}/{scryCount} scryfall files: ===={Fore.GREEN}{Style.BRIGHT}")
-if foundFiles:
-    for _ in foundFiles:
-        print(_)
-else:
-    print("None.")
-print(f"{Style.RESET_ALL}")
-
-# ===============================================================
-# Step 4: Copy files from upFiles to a subfolder in scryDownDir.
-# ===============================================================
-
-# Copy foundFiles (will overwrite any existing files with same name in UpscaledArt dir)
-print("Copying files...")
-for _ in foundFiles:
-    destinationDir = scryDownDir / "UpscaledArt"
-    if not destinationDir.is_dir():
-        destinationDir.mkdir(parents=True, exist_ok=True)
-    destination = destinationDir / Path(_).name
-    if not dry_run:
-        shutil.copy(_, destination)
-# Similarly, copy any ambiguous artist files to a separate dir within the UpscaledArt dir
-for _ in ambiguousArtistFiles:
-    destinationDir = scryDownDir / "UpscaledArt" / "AmbiguousArtist"
-    if not destinationDir.is_dir():
-        destinationDir.mkdir(parents=True, exist_ok=True)
-    destination = destinationDir / Path(_).name
-    if not dry_run:
-        shutil.copy(_, destination)
-print("Done.")
-
-
-# =====================
-# Step 5: Produce logs
-# =====================
-
-# Save a list of missing files (i.e. scryFiles for which no matching cardname was found in upFiles)
 if missingFiles:
+    # Save a list of missing files (i.e. scryFiles for which no matching cardname was found in upFiles)
     missingFilesTxt = scryDownDir / "UpscaledArt" / "#MissingFiles.txt"
     with open(missingFilesTxt, 'w') as f:
         for _ in missingFiles:
-            f.write(f"{_}\n")
-        print(f"Saved list of missing files to {missingFilesTxt}")
+            try:
+                f.write(f"{_}\n")
+            except UnicodeEncodeError:
+                line = unidecode(_)
+                f.write(f"{line}\n")
+        print(f"Saved list of missing files to {missingFilesTxt}\n")
+
+# =============================
+# Ambiguous artist files
+# =============================
+# Copy files files with ambiguous artist (i.e. upFiles with same cardname but with no artist name)
+print(f"==== AMBIGUOUS ARTIST UPSCALE ({ambiguousArtistCount}/{scryCount}) - Art for which a matching cardname was found but was lacking an artist name: ===={Fore.YELLOW}{Style.BRIGHT}")
+if ambiguousArtistFiles:
+    for _ in ambiguousArtistFiles:
+        print(_, end=' ')
+        destination = ambigDestinationDir / Path(_).name
+        print(" --- Copying...", end=' ')
+        if not dry_run:
+            shutil.copy(_, destination)
+            print("Done.")
+        else:
+            print("Skipped (dry run).")
+else:
+    print("None.")
+print(f"{Style.RESET_ALL}")
+
+# =============================
+# Full match files
+# =============================
+print(f"==== FULL MATCH UPSCALE ({foundCount}/{scryCount}) - Art for which a matching cardname AND artist were found: ===={Fore.GREEN}{Style.BRIGHT}")
+if foundFiles:
+    for _ in foundFiles:
+        print(_, end=' ')
+        destination = upDestinationDir / Path(_).name
+        print(" --- Copying...", end=' ')
+        if not dry_run:
+            shutil.copy(_, destination)
+            print("Done.")
+        else:
+            print("Skipped (dry run).")
+else:
+    print("None.")
+print(f"{Style.RESET_ALL}")
 
 print(f'Finished running upscaled-art-finder.py')
