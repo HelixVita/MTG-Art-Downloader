@@ -151,7 +151,7 @@ for i, scryFile in enumerate(scryFilesRegexed):
         foundCount += 1
     else:
         # Then, instead look to see if there are any upFiles that match the cardname but lack an artist name.
-        up_idxs = np.where(np.array([upFilesRegexedNoArtist]) == scryFilesRegexedNoArtist[i])
+        up_idxs = np.where(np.array([upFilesRegexed]) == scryFilesRegexedNoArtist[i])
         matchingFiles = np.array([upFiles])[up_idxs].tolist()
         if matchingFiles:
             # Add those to a separate list
