@@ -25,10 +25,6 @@ upArtDir = Path("D:\\mpcproxies\\Upcaled Arts")
 # ========
 # To do's
 # ========
-# TODO: Implement finding of art for double-sided cards
-# TODO: Implement finding of art for sagas
-# TODO: Implement finding of art for planeswalkers
-# TODO: Implement finding of art for lands
 
 # ==============
 # Debug options
