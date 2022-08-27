@@ -7,35 +7,13 @@ import numpy as np
 import shutil
 from colorama import Style, Fore
 
-# ==== INSTRUCTIONS ====
-# 1. Get your hands on a bunch of upscaled art, for example from the mpcproxies google drive.
-# 2. If the content is online, download a local copy of it and place in a folder on your computer, henceforth referred to as the "upArtDir"
-# 3. Replace the path below with the path to the upArtDir
-upArtDir = Path("D:\\mpcproxies\\Upcaled Arts")
-# 4. Specify the path to the location of your current non-upscaled artwork (i.e. the ones which you'd like to find upscaled versions of), henceforth referred to as the files in scryDownDir.
-scryDownDir = Path("C:\\Users\\marku\\Dropbox\\mpcproxies\\MrTeferi\\MTG-Art-Downloader\\downloaded\\mtgpics")
-# File extensions to include
-extensions = ["*.png", "*.jpg", "*.tif", "*.jpeg"]
-# If you don't have any art files (only a decklist), then you'll need to first download some art, for example by following these steps:
-# 4.1. Open config.ini and set Only.Download.Scryfall = true
-# 4.2. Add some cards to the cards.txt as per the README.md
-# 4.3. Run the MTG-Art-Downloader "main.py" program
-# 5. Run this "upscaled-art-finder.py" program
-# 6. Done!
-# If any upscaled versions were found in upArtDir, then they have now been copied into MTG-Art-Downloader/downloaded/scryfall/UpscaledArt
-# Note 1: The file missingFiles.txt will contain a list of art for which no corresponding art was found in upArtDir.
-# Note 2: If you wish to simply find any upscaled art regardless of artist, then remove the artist from the filenames of your scryfall art files (or change the config.ini to Naming.Convention = NAME).
-# ==== END OF INSTRUCTIONS ====
-
-# ========
-# To do's
-# ========
+upArtDir = Path("C:\\git-helixvita\\MTG-Art-Downloader\\downloaded-premodern\\3-upscaled-felix-chainner\\Upscales-Final-Selection")
 
 # ==============
 # Debug options
 # ==============
 # Dry run? Setting this option to True will run every single part of the program as normal, except the shutil.copy() command which copies the files.
-dry_run = False
+dry_run = True
 
 # =================
 # Helper functions
@@ -87,8 +65,7 @@ def regex_filter(scryFile: str, includeArtist = True, includeSetcode = False):
 # ==================================================
 # Perform preliminary checks and assertions
 # ==================================================
-assert upArtDir.exists, f"Could not find {upArtDir}. Please ensure the path provided is correct."
-assert scryDownDir.exists, f"Could not find {scryDownDir}. Please ensure the path provided is correct."
+assert upArtDir.exists(), f"Could not find {upArtDir}. Please ensure the path provided is correct."
 
 # ==============================================================================
 # -- Normalize filenames --
@@ -96,19 +73,15 @@ assert scryDownDir.exists, f"Could not find {scryDownDir}. Please ensure the pat
 # to avoid that minor differences in formatting prevent files from being found.
 # ==============================================================================
 
+scryDownDir = Path("C:\\git-helixvita\\MTG-Art-Downloader\\downloaded-premodern\\0-scryfall-artcrops-do-not-touch")
+# File extensions to include
+extensions = [".png", ".jpg", ".tif", ".jpeg"]
 
 # Obtain a list of all files in scryDownDir with applicable file extensions
-scryFiles = []
-scryFilesSubdirs = ["Land", "Planeswalker", "Saga", "TF Back", "TF Front"]
-for ext in extensions:
-    scryFiles.extend(glob(os.path.join(scryDownDir, ext)))
-    for subdir in scryFilesSubdirs:
-        scryFiles.extend(glob(os.path.join(scryDownDir / subdir, ext)))
+scryFiles = [_ for _ in os.listdir(scryDownDir) if Path(_).suffix in extensions]
 
 # Obtain a list of all files in upArtDir
-upFiles = []
-for ext in extensions:
-    upFiles.extend(glob(os.path.join(upArtDir,"**", ext)))
+upFiles = [_ for _ in os.listdir(upArtDir) if Path(_).suffix in extensions]
 
 # Create normalized, de-apostrophized, and regex-normalized versions of the list of your files downloaded with MTG-Art-Downloader
 scryFilesNormalized = [normalize_filename(_) for _ in scryFiles]
@@ -124,12 +97,12 @@ upFilesRegexed = [regex_filter(_) for _ in upFilesNormNoApo]
 upFilesRegexedNoArtist = [regex_filter(_, includeArtist=False) for _ in upFilesNormNoApo]
 upCount = len(upFilesRegexed)
 
-# # Check whether there exist files for which someone has forgotten to replace apostrophes in the google drive:
-# for i, file in enumerate(upFilesNormalized):
-#     if file != upFilesNormNoApo[i]:
-#         print(i, file)
-#         print(i, upFilesNormNoApo[i])
-#         break
+# Check whether there exist files for which someone has forgotten to replace apostrophes in the google drive:
+for i, file in enumerate(upFilesNormalized):
+    if file != upFilesNormNoApo[i]:
+        print(i, file)
+        print(i, upFilesNormNoApo[i])
+        break
 
 # ================================================================================
 # -- Compare filenames in upFiles to scryFiles --

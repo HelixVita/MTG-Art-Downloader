@@ -153,3 +153,8 @@ d-forUpscaling
 d-godkjent_noUpscale
 d-look_for_better_art
 d-*
+__pycache__
+felixvita-notes/*
+old/*
+mpc-order-0*/*
+render-everything-project/*

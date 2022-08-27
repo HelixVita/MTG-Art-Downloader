@@ -1,13 +1,861 @@
-M15--Soul of New Phyrexia
-DDN--Zurgo Helmsmasher
-KTK--Ankle Shanker
-FRF--Return to the Earth
-C15--Karlov of the Ghost Council
-SOI--Duskwatch Recruiter
-KLD--Skysovereign, Consul Flagship
-PZ2--Mathas, Fiend Seeker
-AKH--Samut, Voice of Dissent
-RIX--Ghalta, Primal Hunger
-BBD--Zndrsplt, Eye of Wisdom
-M19--Draconic Disciple
-GRN--Tajic, Legion's Edge
+ARN--Abu Ja'far
+ARN--Army of Allah
+ARN--Camel
+ARN--Eye for an Eye
+ARN--Jihad
+ARN--King Suleiman
+ARN--Moorish Cavalry
+ARN--Piety
+ARN--Repentant Blacksmith
+ARN--Shahrazad
+ARN--War Elephant
+ARN--Dandân
+ARN--Fishliver Oil
+ARN--Flying Men
+ARN--Giant Tortoise
+ARN--Island Fish Jasconius
+ARN--Merchant Ship
+ARN--Old Man of the Sea
+ARN--Serendib Djinn
+ARN--Serendib Efreet
+ARN--Sindbad
+ARN--Unstable Mutation
+ARN--Cuombajj Witches
+ARN--El-Hajjâj
+ARN--Erg Raiders
+ARN--Guardian Beast
+ARN--Hasran Ogress
+ARN--Junún Efreet
+ARN--Juzám Djinn
+ARN--Khabál Ghoul
+ARN--Oubliette
+ARN--Sorceress Queen
+ARN--Stone-Throwing Devils
+ARN--Aladdin
+ARN--Ali Baba
+ARN--Ali from Cairo
+ARN--Bird Maiden
+ARN--Desert Nomads
+ARN--Hurr Jackal
+ARN--Kird Ape
+ARN--Magnetic Mountain
+ARN--Mijae Djinn
+ARN--Rukh Egg
+ARN--Ydwen Efreet
+ARN--Cyclone
+ARN--Desert Twister
+ARN--Drop of Honey
+ARN--Erhnam Djinn
+ARN--Ghazbán Ogre
+ARN--Ifh-Bíff Efreet
+ARN--Metamorphosis
+ARN--Nafs Asp
+ARN--Sandstorm
+ARN--Singing Tree
+ARN--Wyluli Wolf
+ARN--Aladdin's Lamp
+ARN--Aladdin's Ring
+ARN--Bottle of Suleiman
+ARN--Brass Man
+ARN--City in a Bottle
+ARN--Dancing Scimitar
+ARN--Ebony Horse
+ARN--Flying Carpet
+ARN--Jandor's Ring
+ARN--Jandor's Saddlebags
+ARN--Jeweled Bird
+ARN--Pyramids
+ARN--Ring of Ma'rûf
+ARN--Sandals of Abdallah
+ARN--Bazaar of Baghdad
+ARN--City of Brass
+ARN--Desert
+ARN--Diamond Valley
+ARN--Elephant Graveyard
+ARN--Island of Wak-Wak
+ARN--Library of Alexandria
+ARN--Oasis
+ATQ--Argivian Archaeologist
+ATQ--Argivian Blacksmith
+ATQ--Artifact Ward
+ATQ--Circle of Protection: Artifacts
+ATQ--Damping Field
+ATQ--Martyrs of Korlis
+ATQ--Reverse Polarity
+ATQ--Drafna's Restoration
+ATQ--Energy Flux
+ATQ--Hurkyl's Recall
+ATQ--Power Artifact
+ATQ--Reconstruction
+ATQ--Sage of Lat-Nam
+ATQ--Transmute Artifact
+ATQ--Artifact Possession
+ATQ--Gate to Phyrexia
+ATQ--Haunting Wind
+ATQ--Phyrexian Gremlins
+ATQ--Priest of Yawgmoth
+ATQ--Xenic Poltergeist
+ATQ--Yawgmoth Demon
+ATQ--Artifact Blast
+ATQ--Atog
+ATQ--Detonate
+ATQ--Dwarven Weaponsmith
+ATQ--Goblin Artisans
+ATQ--Orcish Mechanics
+ATQ--Shatterstorm
+ATQ--Argothian Pixies
+ATQ--Argothian Treefolk
+ATQ--Citanul Druid
+ATQ--Crumble
+ATQ--Gaea's Avenger
+ATQ--Powerleech
+ATQ--Titania's Song
+ATQ--Amulet of Kroog
+ATQ--Armageddon Clock
+ATQ--Ashnod's Altar
+ATQ--Ashnod's Battle Gear
+ATQ--Ashnod's Transmogrant
+ATQ--Battering Ram
+ATQ--Bronze Tablet
+ATQ--Candelabra of Tawnos
+ATQ--Clay Statue
+ATQ--Clockwork Avian
+ATQ--Colossus of Sardia
+ATQ--Coral Helm
+ATQ--Cursed Rack
+ATQ--Dragon Engine
+ATQ--Feldon's Cane
+ATQ--Golgothian Sylex
+ATQ--Grapeshot Catapult
+ATQ--Ivory Tower
+ATQ--Jalum Tome
+ATQ--Mightstone
+ATQ--Millstone
+ATQ--Mishra's War Machine
+ATQ--Obelisk of Undoing
+ATQ--Onulet
+ATQ--Ornithopter
+ATQ--Primal Clay
+ATQ--Rakalite
+ATQ--Rocket Launcher
+ATQ--Shapeshifter
+ATQ--Staff of Zegon
+ATQ--Su-Chi
+ATQ--Tablet of Epityr
+ATQ--Tawnos's Coffin
+ATQ--Tawnos's Wand
+ATQ--Tawnos's Weaponry
+ATQ--Tetravus
+ATQ--The Rack
+ATQ--Triskelion
+ATQ--Urza's Avenger
+ATQ--Urza's Chalice
+ATQ--Urza's Miter
+ATQ--Wall of Spears
+ATQ--Weakstone
+ATQ--Yotian Soldier
+ATQ--Mishra's Factory
+ATQ--Mishra's Workshop
+ATQ--Strip Mine
+ATQ--Urza's Mine
+ATQ--Urza's Power Plant
+ATQ--Urza's Tower
+DRK--Angry Mob
+DRK--Blood of the Martyr
+DRK--Brainwash
+DRK--Cleansing
+DRK--Dust to Dust
+DRK--Exorcist
+DRK--Fasting
+DRK--Festival
+DRK--Fire and Brimstone
+DRK--Holy Light
+DRK--Knights of Thorn
+DRK--Martyr's Cry
+DRK--Miracle Worker
+DRK--Morale
+DRK--Pikemen
+DRK--Preacher
+DRK--Squire
+DRK--Tivadar's Crusade
+DRK--Witch Hunter
+DRK--Amnesia
+DRK--Apprentice Wizard
+DRK--Dance of Many
+DRK--Deep Water
+DRK--Drowned
+DRK--Electric Eel
+DRK--Erosion
+DRK--Flood
+DRK--Ghost Ship
+DRK--Giant Shark
+DRK--Leviathan
+DRK--Mana Vortex
+DRK--Merfolk Assassin
+DRK--Mind Bomb
+DRK--Psychic Allergy
+DRK--Riptide
+DRK--Sunken City
+DRK--Tangle Kelp
+DRK--Water Wurm
+DRK--Ashes to Ashes
+DRK--Banshee
+DRK--Bog Imp
+DRK--Bog Rats
+DRK--Curse Artifact
+DRK--Eater of the Dead
+DRK--Frankenstein's Monster
+DRK--Grave Robbers
+DRK--Inquisition
+DRK--Marsh Gas
+DRK--Murk Dwellers
+DRK--Nameless Race
+DRK--Rag Man
+DRK--Season of the Witch
+DRK--The Fallen
+DRK--Uncle Istvan
+DRK--Word of Binding
+DRK--Worms of the Earth
+DRK--Ball Lightning
+DRK--Blood Moon
+DRK--Brothers of Fire
+DRK--Cave People
+DRK--Eternal Flame
+DRK--Fire Drake
+DRK--Fissure
+DRK--Goblin Caves
+DRK--Goblin Digging Team
+DRK--Goblin Hero
+DRK--Goblin Rock Sled
+DRK--Goblin Shrine
+DRK--Goblin Wizard
+DRK--Goblins of the Flarg
+DRK--Inferno
+DRK--Mana Clash
+DRK--Orc General
+DRK--Sisters of the Flame
+DRK--Carnivorous Plant
+DRK--Elves of Deep Shadow
+DRK--Gaea's Touch
+DRK--Hidden Path
+DRK--Land Leeches
+DRK--Lurker
+DRK--Marsh Viper
+DRK--Niall Silvain
+DRK--People of the Woods
+DRK--Savaen Elves
+DRK--Scarwood Bandits
+DRK--Scarwood Hag
+DRK--Scavenger Folk
+DRK--Spitting Slug
+DRK--Tracker
+DRK--Venom
+DRK--Whippoorwill
+DRK--Wormwood Treefolk
+DRK--Marsh Goblins
+DRK--Scarwood Goblins
+DRK--Dark Heart of the Wood
+DRK--Barl's Cage
+DRK--Bone Flute
+DRK--Book of Rass
+DRK--Coal Golem
+DRK--Dark Sphere
+DRK--Diabolic Machine
+DRK--Fellwar Stone
+DRK--Fountain of Youth
+DRK--Living Armor
+DRK--Necropolis
+DRK--Reflecting Mirror
+DRK--Runesword
+DRK--Scarecrow
+DRK--Skull of Orm
+DRK--Standing Stones
+DRK--Stone Calendar
+DRK--Tormod's Crypt
+DRK--Tower of Coireall
+DRK--Wand of Ith
+DRK--War Barge
+DRK--City of Shadows
+DRK--Maze of Ith
+DRK--Safe Haven
+DRK--Sorrow's Path
+FEM--Combat Medic
+FEM--Farrel's Mantle
+FEM--Farrel's Zealot
+FEM--Farrelite Priest
+FEM--Hand of Justice
+FEM--Heroism
+FEM--Icatian Infantry
+FEM--Icatian Javelineers
+FEM--Icatian Lieutenant
+FEM--Icatian Moneychanger
+FEM--Icatian Phalanx
+FEM--Icatian Priest
+FEM--Icatian Scout
+FEM--Icatian Skirmishers
+FEM--Icatian Town
+FEM--Order of Leitbur
+FEM--Deep Spawn
+FEM--High Tide
+FEM--Homarid
+FEM--Homarid Shaman
+FEM--Homarid Spawning Bed
+FEM--Homarid Warrior
+FEM--Merseine
+FEM--River Merfolk
+FEM--Seasinger
+FEM--Svyelunite Priest
+FEM--Tidal Flats
+FEM--Tidal Influence
+FEM--Vodalian Knights
+FEM--Vodalian Mage
+FEM--Vodalian Soldiers
+FEM--Vodalian War Machine
+FEM--Armor Thrull
+FEM--Basal Thrull
+FEM--Breeding Pit
+FEM--Derelor
+FEM--Ebon Praetor
+FEM--Hymn to Tourach
+FEM--Initiates of the Ebon Hand
+FEM--Mindstab Thrull
+FEM--Necrite
+FEM--Order of the Ebon Hand
+FEM--Soul Exchange
+FEM--Thrull Champion
+FEM--Thrull Retainer
+FEM--Thrull Wizard
+FEM--Tourach's Chant
+FEM--Tourach's Gate
+FEM--Brassclaw Orcs
+FEM--Dwarven Armorer
+FEM--Dwarven Catapult
+FEM--Dwarven Lieutenant
+FEM--Dwarven Soldier
+FEM--Goblin Chirurgeon
+FEM--Goblin Flotilla
+FEM--Goblin Grenade
+FEM--Goblin Kites
+FEM--Goblin War Drums
+FEM--Goblin Warrens
+FEM--Orcish Captain
+FEM--Orcish Spy
+FEM--Orcish Veteran
+FEM--Orgg
+FEM--Raiding Party
+FEM--Elven Fortress
+FEM--Elvish Farmer
+FEM--Elvish Hunter
+FEM--Elvish Scout
+FEM--Feral Thallid
+FEM--Fungal Bloom
+FEM--Night Soil
+FEM--Spore Cloud
+FEM--Spore Flower
+FEM--Thallid
+FEM--Thallid Devourer
+FEM--Thelon's Chant
+FEM--Thelon's Curse
+FEM--Thelonite Druid
+FEM--Thelonite Monk
+FEM--Thorn Thallid
+FEM--Aeolipile
+FEM--Balm of Restoration
+FEM--Conch Horn
+FEM--Delif's Cone
+FEM--Delif's Cube
+FEM--Draconian Cylix
+FEM--Elven Lyre
+FEM--Implements of Sacrifice
+FEM--Ring of Renewal
+FEM--Spirit Shield
+FEM--Zelyon Sword
+FEM--Bottomless Vault
+FEM--Dwarven Hold
+FEM--Dwarven Ruins
+FEM--Ebon Stronghold
+FEM--Havenwood Battleground
+FEM--Hollow Trees
+FEM--Icatian Store
+FEM--Rainbow Vale
+FEM--Ruins of Trokair
+FEM--Sand Silos
+FEM--Svyelunite Temple
+HML--Abbey Gargoyles
+HML--Abbey Matron
+HML--Aysen Bureaucrats
+HML--Aysen Crusader
+HML--Aysen Highway
+HML--Beast Walkers
+HML--Death Speakers
+HML--Hazduhr the Abbot
+HML--Leeches
+HML--Mesa Falcon
+HML--Prophecy
+HML--Rashka the Slayer
+HML--Samite Alchemist
+HML--Serra Aviary
+HML--Serra Bestiary
+HML--Serra Inquisitors
+HML--Serra Paladin
+HML--Soraya the Falconer
+HML--Trade Caravan
+HML--Truce
+HML--Aether Storm
+HML--Baki's Curse
+HML--Chain Stasis
+HML--Coral Reef
+HML--Dark Maze
+HML--Forget
+HML--Giant Albatross
+HML--Giant Oyster
+HML--Jinx
+HML--Labyrinth Minotaur
+HML--Marjhan
+HML--Memory Lapse
+HML--Merchant Scroll
+HML--Mystic Decree
+HML--Narwhal
+HML--Reef Pirates
+HML--Reveka, Wizard Savant
+HML--Sea Sprite
+HML--Sea Troll
+HML--Wall of Kelp
+HML--Baron Sengir
+HML--Black Carriage
+HML--Broken Visage
+HML--Cemetery Gate
+HML--Drudge Spell
+HML--Dry Spell
+HML--Feast of the Unicorn
+HML--Funeral March
+HML--Ghost Hounds
+HML--Grandmother Sengir
+HML--Greater Werewolf
+HML--Headstone
+HML--Ihsan's Shade
+HML--Irini Sengir
+HML--Koskun Falls
+HML--Sengir Autocrat
+HML--Sengir Bats
+HML--Timmerian Fiends
+HML--Torture
+HML--Veldrane of Sengir
+HML--Aliban's Tower
+HML--Ambush
+HML--Ambush Party
+HML--An-Zerrin Ruins
+HML--Anaba Ancestor
+HML--Anaba Bodyguard
+HML--Anaba Shaman
+HML--Anaba Spirit Crafter
+HML--Chandler
+HML--Dwarven Pony
+HML--Dwarven Sea Clan
+HML--Dwarven Trader
+HML--Eron the Relentless
+HML--Evaporate
+HML--Heart Wolf
+HML--Ironclaw Curse
+HML--Joven
+HML--Orcish Mine
+HML--Retribution
+HML--Winter Sky
+HML--An-Havva Constable
+HML--An-Havva Inn
+HML--Autumn Willow
+HML--Carapace
+HML--Daughter of Autumn
+HML--Faerie Noble
+HML--Folk of An-Havva
+HML--Hungry Mist
+HML--Joven's Ferrets
+HML--Leaping Lizard
+HML--Mammoth Harness
+HML--Primal Order
+HML--Renewal
+HML--Root Spider
+HML--Roots
+HML--Rysorian Badger
+HML--Shrink
+HML--Spectral Bears
+HML--Willow Faerie
+HML--Willow Priestess
+HML--Apocalypse Chime
+HML--Clockwork Gnomes
+HML--Clockwork Steed
+HML--Clockwork Swarm
+HML--Didgeridoo
+HML--Ebony Rhino
+HML--Feroz's Ban
+HML--Joven's Tools
+HML--Roterothopter
+HML--Serrated Arrows
+HML--An-Havva Township
+HML--Aysen Abbey
+HML--Castle Sengir
+HML--Koskun Keep
+HML--Wizards' School
+ICE--Adarkar Unicorn
+ICE--Arctic Foxes
+ICE--Arenson's Aura
+ICE--Armor of Faith
+ICE--Battle Cry
+ICE--Black Scarab
+ICE--Blessed Wine
+ICE--Blinking Spirit
+ICE--Blue Scarab
+ICE--Call to Arms
+ICE--Caribou Range
+ICE--Circle of Protection: Black
+ICE--Circle of Protection: Blue
+ICE--Circle of Protection: Green
+ICE--Circle of Protection: Red
+ICE--Circle of Protection: White
+ICE--Cold Snap
+ICE--Cooperation
+ICE--Death Ward
+ICE--Disenchant
+ICE--Drought
+ICE--Elvish Healer
+ICE--Enduring Renewal
+ICE--Energy Storm
+ICE--Formation
+ICE--Fylgja
+ICE--General Jarkeld
+ICE--Green Scarab
+ICE--Hallowed Ground
+ICE--Heal
+ICE--Hipparion
+ICE--Justice
+ICE--Kelsinko Ranger
+ICE--Kjeldoran Elite Guard
+ICE--Kjeldoran Guard
+ICE--Kjeldoran Knight
+ICE--Kjeldoran Phalanx
+ICE--Kjeldoran Royal Guard
+ICE--Kjeldoran Skycaptain
+ICE--Kjeldoran Skyknight
+ICE--Kjeldoran Warrior
+ICE--Lightning Blow
+ICE--Lost Order of Jarkeld
+ICE--Mercenaries
+ICE--Order of the Sacred Torch
+ICE--Order of the White Shield
+ICE--Prismatic Ward
+ICE--Rally
+ICE--Red Scarab
+ICE--Sacred Boon
+ICE--Seraph
+ICE--Shield Bearer
+ICE--Snow Hound
+ICE--Swords to Plowshares
+ICE--Warning
+ICE--White Scarab
+ICE--Arnjlot's Ascent
+ICE--Balduvian Conjurer
+ICE--Balduvian Shaman
+ICE--Binding Grasp
+ICE--Brainstorm
+ICE--Breath of Dreams
+ICE--Clairvoyance
+ICE--Counterspell
+ICE--Deflection
+ICE--Dreams of the Dead
+ICE--Enervate
+ICE--Errant Minion
+ICE--Essence Flare
+ICE--Force Void
+ICE--Glacial Wall
+ICE--Hydroblast
+ICE--Iceberg
+ICE--Icy Prison
+ICE--Illusionary Forces
+ICE--Illusionary Presence
+ICE--Illusionary Terrain
+ICE--Illusionary Wall
+ICE--Illusions of Grandeur
+ICE--Infuse
+ICE--Krovikan Sorcerer
+ICE--Magus of the Unseen
+ICE--Mesmeric Trance
+ICE--Mistfolk
+ICE--Musician
+ICE--Mystic Might
+ICE--Mystic Remora
+ICE--Phantasmal Mount
+ICE--Polar Kraken
+ICE--Portent
+ICE--Power Sink
+ICE--Ray of Command
+ICE--Ray of Erasure
+ICE--Reality Twist
+ICE--Sea Spirit
+ICE--Shyft
+ICE--Sibilant Spirit
+ICE--Silver Erne
+ICE--Sleight of Mind
+ICE--Snow Devil
+ICE--Snowfall
+ICE--Soldevi Machinist
+ICE--Soul Barrier
+ICE--Thunder Wall
+ICE--Updraft
+ICE--Wind Spirit
+ICE--Winter's Chill
+ICE--Word of Undoing
+ICE--Wrath of Marit Lage
+ICE--Zur's Weirding
+ICE--Zuran Enchanter
+ICE--Zuran Spellcaster
+ICE--Abyssal Specter
+ICE--Ashen Ghoul
+ICE--Brine Shaman
+ICE--Burnt Offering
+ICE--Cloak of Confusion
+ICE--Dance of the Dead
+ICE--Dark Banishing
+ICE--Dark Ritual
+ICE--Demonic Consultation
+ICE--Dread Wight
+ICE--Drift of the Dead
+ICE--Fear
+ICE--Flow of Maggots
+ICE--Foul Familiar
+ICE--Gangrenous Zombies
+ICE--Gaze of Pain
+ICE--Gravebind
+ICE--Hecatomb
+ICE--Hoar Shade
+ICE--Howl from Beyond
+ICE--Hyalopterous Lemure
+ICE--Icequake
+ICE--Infernal Darkness
+ICE--Infernal Denizen
+ICE--Kjeldoran Dead
+ICE--Knight of Stromgald
+ICE--Krovikan Elementalist
+ICE--Krovikan Fetish
+ICE--Krovikan Vampire
+ICE--Legions of Lim-Dûl
+ICE--Leshrac's Rite
+ICE--Leshrac's Sigil
+ICE--Lim-Dûl's Cohort
+ICE--Lim-Dûl's Hex
+ICE--Mind Ravel
+ICE--Mind Warp
+ICE--Mind Whip
+ICE--Minion of Leshrac
+ICE--Minion of Tevesh Szat
+ICE--Mole Worms
+ICE--Moor Fiend
+ICE--Necropotence
+ICE--Norritt
+ICE--Oath of Lim-Dûl
+ICE--Pestilence Rats
+ICE--Pox
+ICE--Seizures
+ICE--Songs of the Damned
+ICE--Soul Burn
+ICE--Soul Kiss
+ICE--Spoils of Evil
+ICE--Spoils of War
+ICE--Stench of Evil
+ICE--Stromgald Cabal
+ICE--Touch of Death
+ICE--Withering Wisps
+ICE--Aggression
+ICE--Anarchy
+ICE--Avalanche
+ICE--Balduvian Barbarians
+ICE--Balduvian Hydra
+ICE--Barbarian Guides
+ICE--Battle Frenzy
+ICE--Bone Shaman
+ICE--Brand of Ill Omen
+ICE--Chaos Lord
+ICE--Chaos Moon
+ICE--Conquer
+ICE--Curse of Marit Lage
+ICE--Dwarven Armory
+ICE--Errantry
+ICE--Flame Spirit
+ICE--Flare
+ICE--Game of Chaos
+ICE--Glacial Crevasses
+ICE--Goblin Mutant
+ICE--Goblin Sappers
+ICE--Goblin Ski Patrol
+ICE--Goblin Snowman
+ICE--Grizzled Wolverine
+ICE--Imposing Visage
+ICE--Incinerate
+ICE--Jokulhaups
+ICE--Karplusan Giant
+ICE--Karplusan Yeti
+ICE--Lava Burst
+ICE--Márton Stromgald
+ICE--Melee
+ICE--Melting
+ICE--Meteor Shower
+ICE--Mountain Goat
+ICE--Mudslide
+ICE--Orcish Cannoneers
+ICE--Orcish Conscripts
+ICE--Orcish Farmer
+ICE--Orcish Healer
+ICE--Orcish Librarian
+ICE--Orcish Lumberjack
+ICE--Orcish Squatters
+ICE--Panic
+ICE--Pyroblast
+ICE--Pyroclasm
+ICE--Sabretooth Tiger
+ICE--Shatter
+ICE--Stone Rain
+ICE--Stone Spirit
+ICE--Stonehands
+ICE--Tor Giant
+ICE--Total War
+ICE--Vertigo
+ICE--Wall of Lava
+ICE--Word of Blasting
+ICE--Aurochs
+ICE--Balduvian Bears
+ICE--Blizzard
+ICE--Brown Ouphe
+ICE--Chub Toad
+ICE--Dire Wolves
+ICE--Earthlore
+ICE--Elder Druid
+ICE--Essence Filter
+ICE--Fanatical Fever
+ICE--Folk of the Pines
+ICE--Forbidden Lore
+ICE--Forgotten Lore
+ICE--Foxfire
+ICE--Freyalise Supplicant
+ICE--Freyalise's Charm
+ICE--Freyalise's Winds
+ICE--Fyndhorn Brownie
+ICE--Fyndhorn Elder
+ICE--Fyndhorn Elves
+ICE--Fyndhorn Pollen
+ICE--Giant Growth
+ICE--Gorilla Pack
+ICE--Hot Springs
+ICE--Hurricane
+ICE--Johtull Wurm
+ICE--Juniper Order Druid
+ICE--Lhurgoyf
+ICE--Lure
+ICE--Maddening Wind
+ICE--Nature's Lore
+ICE--Pale Bears
+ICE--Pygmy Allosaurus
+ICE--Pyknite
+ICE--Regeneration
+ICE--Rime Dryad
+ICE--Ritual of Subdual
+ICE--Scaled Wurm
+ICE--Shambling Strider
+ICE--Snowblind
+ICE--Stampede
+ICE--Stunted Growth
+ICE--Tarpan
+ICE--Thermokarst
+ICE--Thoughtleech
+ICE--Tinder Wall
+ICE--Touch of Vitae
+ICE--Trailblazer
+ICE--Venomous Breath
+ICE--Wall of Pine Needles
+ICE--Whiteout
+ICE--Wiitigo
+ICE--Wild Growth
+ICE--Woolly Mammoths
+ICE--Woolly Spider
+ICE--Yavimaya Gnats
+ICE--Altar of Bone
+ICE--Centaur Archer
+ICE--Chromatic Armor
+ICE--Diabolic Vision
+ICE--Earthlink
+ICE--Elemental Augury
+ICE--Essence Vortex
+ICE--Fiery Justice
+ICE--Fire Covenant
+ICE--Flooded Woodlands
+ICE--Fumarole
+ICE--Ghostly Flame
+ICE--Giant Trap Door Spider
+ICE--Glaciers
+ICE--Hymn of Rebirth
+ICE--Kjeldoran Frostbeast
+ICE--Merieke Ri Berit
+ICE--Monsoon
+ICE--Mountain Titan
+ICE--Reclamation
+ICE--Skeleton Ship
+ICE--Spectral Shield
+ICE--Storm Spirit
+ICE--Stormbind
+ICE--Wings of Aesthir
+ICE--Adarkar Sentinel
+ICE--Aegis of the Meek
+ICE--Amulet of Quoz
+ICE--Arcum's Sleigh
+ICE--Arcum's Weathervane
+ICE--Arcum's Whistle
+ICE--Barbed Sextant
+ICE--Baton of Morale
+ICE--Celestial Sword
+ICE--Crown of the Ages
+ICE--Despotic Scepter
+ICE--Elkin Bottle
+ICE--Fyndhorn Bow
+ICE--Goblin Lyre
+ICE--Hematite Talisman
+ICE--Ice Cauldron
+ICE--Icy Manipulator
+ICE--Infinite Hourglass
+ICE--Jester's Cap
+ICE--Jester's Mask
+ICE--Jeweled Amulet
+ICE--Lapis Lazuli Talisman
+ICE--Malachite Talisman
+ICE--Nacre Talisman
+ICE--Naked Singularity
+ICE--Onyx Talisman
+ICE--Pentagram of the Ages
+ICE--Pit Trap
+ICE--Runed Arch
+ICE--Shield of the Ages
+ICE--Skull Catapult
+ICE--Snow Fortress
+ICE--Soldevi Golem
+ICE--Soldevi Simulacrum
+ICE--Staff of the Ages
+ICE--Sunstone
+ICE--Time Bomb
+ICE--Urza's Bauble
+ICE--Vexing Arcanix
+ICE--Vibrating Sphere
+ICE--Walking Wall
+ICE--Wall of Shields
+ICE--War Chariot
+ICE--Whalebone Glider
+ICE--Zuran Orb
+ICE--Adarkar Wastes
+ICE--Brushland
+ICE--Glacial Chasm
+ICE--Halls of Mist
+ICE--Ice Floe
+ICE--Karplusan Forest
+ICE--Land Cap
+ICE--Lava Tubes
+ICE--River Delta
+ICE--Sulfurous Springs
+ICE--Timberline Ridge
+ICE--Underground River
+ICE--Veldt
